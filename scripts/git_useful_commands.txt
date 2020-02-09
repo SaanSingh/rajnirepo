@@ -18,10 +18,10 @@ Step3: Push the branch on github :
 	$ git commit -am ["MSG"]
 	$ git push 
  
-====== Push changes from upstream
+===== Push changes from upstream
 - assuimg you have deleted some file from upstream and want to pull changes to local
-  	$ cd to branch 
-$ git pull 
+cd to branch 
+	$ git pull 
 
 ===== Miscellaneous 
 -- You can see all the branches created by using :
