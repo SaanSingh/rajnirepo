@@ -1,4 +1,3 @@
-URL: https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches
 
 ===== ADD NEW BRANCH 
 
@@ -10,20 +9,20 @@ Step2: Create the branch on your local machine and switch in this branch :
 Step3: Push the branch on github :
 	$ git push origin [name_of_your_new_branch]
 
-** After performing above steps , your branch will be available in github with all files in new branch.
+** After performing above steps, your branch will be available in github with all files in new branch.
 
 
 === Push new changes to upstream 
  - assume you have added new file to branch on local
-cd to branch
-git add [filename] /[*]
-git commit -am ["MSG"]
-git push 
+$ cd to branch
+$ git add [filename] /[*]
+$ git commit -am ["MSG"]
+$ git push 
  
 ======= Push changes from upstream
 - assuimg you have deleted some file from upstream and want to pull changes to local
-cd to branch 
-git pull 
+  	$ cd to branch 
+$ git pull 
 
 ===== MISCELENIOUS 
 -- You can see all the branches created by using :
@@ -33,3 +32,5 @@ git pull
 -- Update your branch when the original branch from official repository has been updated :
 	$ git fetch [name_of_your_remote]
 	
+Reference:URL: https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches
+
