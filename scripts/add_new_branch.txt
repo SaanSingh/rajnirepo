@@ -1,0 +1,19 @@
+URL: https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches
+
+Step1: Before creating a new branch, pull the changes from upstream. Your master needs to be up to date.
+	$ git pull
+Step2: Create the branch on your local machine and switch in this branch :
+	git checkout -b [name_of_your_new_branch]
+	cd [name_of_your_new_branch]
+Step3: Push the branch on github :
+	$ git push origin [name_of_your_new_branch]
+
+
+================ After above steps , your branch will be available in github and all files in it.
+
+-- You can see all the branches created by using :
+	$ git branch -a
+-- Push changes from your commit into your branch :
+	$ git push [name_of_your_new_remote] [url]
+-- Update your branch when the original branch from official repository has been updated :
+	$ git fetch [name_of_your_remote]
