@@ -4,8 +4,8 @@
 Step1: Before creating a new branch, pull the changes from upstream. Your master needs to be up to date.
 	$ git pull
 Step2: Create the branch on your local machine and switch in this branch :
-	git checkout -b [name_of_your_new_branch]
-	cd [name_of_your_new_branch]
+	$ git checkout -b [name_of_your_new_branch]
+	$ cd [name_of_your_new_branch]
 Step3: Push the branch on github :
 	$ git push origin [name_of_your_new_branch]
 
