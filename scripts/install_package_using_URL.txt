@@ -1,0 +1,21 @@
+---
+- hosts: "{{hosts|default('localhost')}}"
+  tasks:
+  - name: Create a Directory /ansible/test1/fep/patch
+    become: yes
+    file:
+      path: /ansible/test1/fep/patch
+      state: directory
+      mode: 0755
+      owner: root
+      group: root
+
+  - name: Download Tomcat using get_url
+    become: yes
+    get_url:
+      url: https://www-us.apache.org/dist/tomcat/tomcat-9/v9.0.30/bin/apache-tomcat-9.0.30-deployer.tar.gz
+      dest: /ansible/test1/fep/patch
+      mode: 0755
+      checksum: sha512:576680a9fd6dd3ecb68e5b3e10c4775fd724f2b8cb60284291b99664a7e4415418b8892a1eff241ef2d1e00f0ca745493164eac1e62c33f2a41ccc6c94bf2567
+      group: root
+      owner: root
