@@ -26,8 +26,8 @@ git add [filename] /[*]
 git commit -am ["MSG"]
 git push 
  
-======= Push chenges from upstream
-- assuimg you have deleted some file form upstream and want to pull changes to local
+======= Push changes from upstream
+- assuimg you have deleted some file from upstream and want to pull changes to local
 cd to branch 
 git pull 
 
